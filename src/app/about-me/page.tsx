@@ -6,7 +6,7 @@ function page() {
   return (
     <main className="flex min-h-screen  flex-col bg-gray-50  ">
       <section className="sm:p-5 flex  self-center h-full">
-        <div className="maxWidth mx-auto ">
+        <div className="maxWidth mx-auto flex-col flex items-center ">
           <h1 className="font-extrabold text-4xl leading-tight">
             My name is Hazem El-khalil,
             <br /> I’m a Fullstack developer <br /> working and living in
@@ -24,9 +24,9 @@ function page() {
             <a>Linkedin</a>
             <a>Mail</a>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 ">
             <label className="font-bold">My history</label>
-            <HistoryComponent></HistoryComponent>
+            <HistoryComponent />
           </div>
         </div>
       </section>

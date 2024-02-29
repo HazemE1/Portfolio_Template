@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import FadeingList from "./FadeingList";
+import ProjectCompnent from "./ProjectComponent";
 
 function HistoryComponent() {
   const years = [
@@ -9,39 +10,17 @@ function HistoryComponent() {
       projects: [
         {
           name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
+          description:
+            "Your AI companion for seamless studies and top-notch results. Optimize study performance, save time, and enhance grades with our advanced tool!",
+          tools: ["NextJS", "React", "Firebase", "GCS", "Tailwind"],
           socials: [{ url: "Assistena.com", name: "Link" }],
         },
         {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
+          name: "Halkan",
+          description:
+            "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
+          tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
+          socials: [{ url: "Halkan.com", name: "Link" }],
         },
       ],
     },
@@ -50,39 +29,17 @@ function HistoryComponent() {
       projects: [
         {
           name: "Halkan",
-          description: "bla",
-          tools: [""],
+          description:
+            "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
+          tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
           socials: [{ url: "Halkan.com", name: "Link" }],
         },
         {
-          name: "Halkan",
-          description: "bla",
-          tools: [""],
-          socials: [{ url: "Halkan.com", name: "Link" }],
-        },
-        {
-          name: "Halkan",
-          description: "bla",
-          tools: [""],
-          socials: [{ url: "Halkan.com", name: "Link" }],
-        },
-        {
-          name: "Halkan",
-          description: "bla",
-          tools: [""],
-          socials: [{ url: "Halkan.com", name: "Link" }],
-        },
-        {
-          name: "Halkan",
-          description: "bla",
-          tools: [""],
-          socials: [{ url: "Halkan.com", name: "Link" }],
-        },
-        {
-          name: "Halkan",
-          description: "bla",
-          tools: [""],
-          socials: [{ url: "Halkan.com", name: "Link" }],
+          name: "Assistena",
+          description:
+            "Your AI companion for seamless studies and top-notch results. Optimize study performance, save time, and enhance grades with our advanced tool!",
+          tools: ["NextJS", "React", "Firebase", "GCS", "Tailwind"],
+          socials: [{ url: "Assistena.com", name: "Link" }],
         },
       ],
     },
@@ -90,40 +47,11 @@ function HistoryComponent() {
       year: "2022",
       projects: [
         {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
+          name: "Halkan",
+          description:
+            "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
+          tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
+          socials: [{ url: "Halkan.com", name: "Link" }],
         },
       ],
     },
@@ -382,20 +310,23 @@ function HistoryComponent() {
   };
 
   return (
-    <div className="flex gap-10">
+    <div className="flex gap-10 w-full  ">
       <FadeingList
         list={[...years.map((a) => a.year)]}
         callBack={(item) => selectItem(item)}
         currentItem={currentItem}
       />
-      <div className="w-full grid grid-cols-3  ">
-        {years[currentItem].projects!.map((project) => {
-          return (
-            <div className="p-5 bg-gray-400 shadow-lg h-fit w-fit rounded-2xl">
-              {project.name}
-            </div>
-          );
-        })}
+      <div className=" gap-5 grid grid-cols-2">
+        {years[currentItem].projects!.map((project, index) => (
+          <div key={index} className="h-full  w-[382px] ">
+            <ProjectCompnent
+              title={project.name}
+              description={project.description}
+              tools={project.tools}
+              socials={project.socials}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
