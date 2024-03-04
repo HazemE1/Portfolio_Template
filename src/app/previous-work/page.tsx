@@ -19,9 +19,10 @@ function page() {
 
           <div className="w-full flex flex-col gap-2  ">
             <p className="text-3xl text-gray-700 font-bold">Assistena</p>
-            <div className="w-full aspect-video rounded-2xl overflow-hidden bg-black relative">
+            <div className="w-full aspect-video rounded-2xl bg-black ">
               <VideoComponent
-                src={["/media/vids/vid1.mp4", "/media/vids/vid1.mov"]}
+                bgurl="https://i.imgur.com/2Vd0LFM.png"
+                src={["/media/vids/vid2.mp4", "/media/vids/vid2.mov"]}
               />
             </div>
           </div>
@@ -29,6 +30,7 @@ function page() {
             <p className="text-3xl text-gray-700 font-bold">Halkan</p>
             <div className="w-full aspect-video rounded-2xl bg-black ">
               <VideoComponent
+                bgurl="https://i.imgur.com/9g9r8uJ.png"
                 src={["/media/vids/vid1.mp4", "/media/vids/vid1.mov"]}
               />
             </div>

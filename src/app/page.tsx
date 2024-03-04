@@ -7,22 +7,6 @@ import Link from "next/link";
 import { animated } from "@react-spring/web";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title: "Your Digital Architect - Hazem Elkhalil",
-  description:
-    "Empowering your online presence with bespoke web solutions. Get ready to elevate your brand!",
-  keywords: [
-    "freelance",
-    "web development",
-    "Next.js",
-    "digital solutions",
-    "branding",
-  ],
-  author: "Hazem Elkhalil",
-  image: "/media/GraphQ/graphQ.png",
-  url: "https://yourwebsite.com",
-};
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-gray-50  ">
