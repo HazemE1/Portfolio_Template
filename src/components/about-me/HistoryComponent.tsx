@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import FadeingList from "./FadeingList";
 import ProjectCompnent from "./ProjectComponent";
 
+export enum State {
+  ACTIVE,
+  INACTIVE,
+  ON_HOLD,
+}
 function HistoryComponent() {
   const years = [
     {
@@ -14,6 +19,7 @@ function HistoryComponent() {
             "Your AI companion for seamless studies and top-notch results. Optimize study performance, save time, and enhance grades with our advanced tool!",
           tools: ["NextJS", "React", "Firebase", "GCS", "Tailwind"],
           socials: [{ url: "Assistena.com", name: "Link" }],
+          state: State.ACTIVE,
         },
         {
           name: "Halkan",
@@ -21,6 +27,7 @@ function HistoryComponent() {
             "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
           tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
           socials: [{ url: "Halkan.com", name: "Link" }],
+          state: State.ACTIVE,
         },
       ],
     },
@@ -33,6 +40,7 @@ function HistoryComponent() {
             "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
           tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
           socials: [{ url: "Halkan.com", name: "Link" }],
+          state: State.ACTIVE,
         },
         {
           name: "Assistena",
@@ -40,6 +48,7 @@ function HistoryComponent() {
             "Your AI companion for seamless studies and top-notch results. Optimize study performance, save time, and enhance grades with our advanced tool!",
           tools: ["NextJS", "React", "Firebase", "GCS", "Tailwind"],
           socials: [{ url: "Assistena.com", name: "Link" }],
+          state: State.ACTIVE,
         },
       ],
     },
@@ -52,6 +61,7 @@ function HistoryComponent() {
             "På Halkan.se vill vi göra din bokning av din riskutbildning så enkel som möjligt",
           tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
           socials: [{ url: "Halkan.com", name: "Link" }],
+          state: State.ACTIVE,
         },
       ],
     },
@@ -59,247 +69,33 @@ function HistoryComponent() {
       year: "2021",
       projects: [
         {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
+          name: "Loyalties",
+          description: "Loyalties focuses on",
+          tools: ["ReactJS", "MUI", "Firebase", "NodeJS"],
+          socials: [{ url: "Halkan.com", name: "Link" }],
+          state: State.ON_HOLD,
         },
       ],
     },
     {
       year: "2020",
-      projects: [
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-      ],
+      projects: [],
     },
     {
       year: "2019",
-      projects: [
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-      ],
+      projects: [],
     },
     {
       year: "2018",
-      projects: [
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-      ],
+      projects: [],
     },
     {
       year: "2017",
-      projects: [
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-      ],
+      projects: [],
     },
     {
       year: "2016",
-      projects: [
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-        {
-          name: "Assistena",
-          description: "bla",
-          tools: ["NextJS"],
-          socials: [{ url: "Assistena.com", name: "Link" }],
-        },
-      ],
+      projects: [],
     },
   ];
   const [currentItem, setCurrentItem] = useState<number>(0);
@@ -324,6 +120,7 @@ function HistoryComponent() {
               description={project.description}
               tools={project.tools}
               socials={project.socials}
+              state={project.state}
             />
           </div>
         ))}

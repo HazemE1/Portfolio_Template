@@ -5,6 +5,7 @@ import { MdMail } from "react-icons/md";
 import Link from "next/link";
 
 import { animated } from "@react-spring/web";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Your Digital Architect - Hazem Elkhalil",
@@ -180,25 +181,7 @@ export default function Home() {
           </form>
         </div>
       </section>
-      <section className="bg-[#222222] p-12 text-white flex items-center justify-between sm:p-5">
-        <p>© Hazem El-khalil, 2024</p>
-        <div className="flex justify-center items-center gap-5 ">
-          <Link href={"/blog"}>
-            <span className="text-lg">Blog</span>
-          </Link>
-        </div>
-        <div className="flex justify-center items-center gap-5 [&>a]:text-4xl">
-          <a>
-            <LiaLinkedin />
-          </a>
-          <a>
-            <LiaInstagram />
-          </a>
-          <a>
-            <MdMail />
-          </a>
-        </div>
-      </section>
+      <Footer />
     </main>
   );
 }

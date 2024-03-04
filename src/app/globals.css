@@ -9,3 +9,17 @@ h1 {
 .maxWidth {
   @apply max-w-[1100px];
 }
+
+*::-webkit-scrollbar {
+  height: 4px; /* height of horizontal scrollbar */
+  width: 8px; /* width of the vertical scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: gray; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}

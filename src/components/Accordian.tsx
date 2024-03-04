@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { GoPlus } from "react-icons/go";
 import { HiOutlinePlusSm } from "react-icons/hi";
 
 interface AccordianProps {
