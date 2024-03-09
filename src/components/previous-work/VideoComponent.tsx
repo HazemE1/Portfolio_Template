@@ -1,16 +1,20 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 
-function VideoComponent(props: { src: string[]; bgurl: string }) {
+function VideoComponent(props: {
+  children: ReactNode;
+  src: string[];
+  bgurl: string;
+}) {
   return (
-    <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl relative group">
+    <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl  group">
       <div
-        className={`inset-0 w-full h-full absolute group-hover:hidden  z-30`}
+        className={`inset-0 w-full h-full absolute group-hover:hidden rounded-2xl overflow-hidden  z-30`}
       >
-        <img className="h-full w-full" src={props.bgurl}></img>
-        <div
-          className={`inset-0 w-full h-full absolute  bg-gray-100/50 z-30`}
-        ></div>
+        <img className="h-full w-full rounded-2xl" src={props.bgurl}></img>
+        <div className={`inset-0 w-full h-full absolute  bg-gray-100/80 z-30`}>
+          {props.children}
+        </div>
       </div>
       <video
         onMouseEnter={(video) => video.currentTarget.play()}
