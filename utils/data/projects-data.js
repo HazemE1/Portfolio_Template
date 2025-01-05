@@ -1,42 +1,65 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
-];
+  {
+    id: 1,
+    name: "Assistena AI",
+    description:
+      "Me and my team built an AI-powered education application. We utlized the development of AI to help students with creating and managing their studymaterial, the application is developed with the help of NextJS, OpenAI, Firebase Auth and Firestore.",
+    tools: [
+      "OpenAI API",
+      "NextJS",
+      "Firebase Auth",
+      "GCP",
+      "Firestore",
+      "TypeScript",
+      "Tailwind CSS",
+      "NodeJS",
+    ],
+    role: "Fullstack Developer",
+    code: "https://assistena.com",
+    demo: "https://assistena.com",
+  },
+  {
+    id: 2,
+    name: "Halkan SE",
+    description:
+      "Utilizing the development of web development i developed a website for Halkan SE, a startup company in Sweden that focuses on drivers license courses. I was the sole develoer of Halkan SE and i developed a booking system with a paymentgateway, a course management system and a CMS for the website. The payment gateway was developed with direct communication to Swish, Stripe and Klarna to implement the most cusotmizuable payment wall possible. I developed a automatic email system that sends out emails to the students with the course material and the booking information.",
+    tools: [
+      "ViteJs",
+      "Tailwind CSS",
+      "Google Maps",
+      "Material UI",
+      "TypeScript",
+      "Firebase Auth",
+      "Firebase Realtime Database",
+      "Serp API",
+      "Google cloud functions",
+    ],
+    role: "Full Stack Developer",
+    code: "https://halkan.se",
+    demo: "https://halkan.se",
+  },
+  {
+    id: 3,
+    name: "Homy+ - Spigot Plugin",
+    description: `Homy+ is an innovative Spigot Minecraft plugin that introduces a user-friendly GUI-based home system. Players can place homes across their Minecraft worlds and teleport to them effortlessly using the GUI. Designed with flexibility in mind, Homy+ is fully customizable, allowing users to define their own language settings, cooldown periods, and more.
 
+With over 500 servers actively using it and a perfect 5/5 star rating, Homy+ stands as a trusted choice for enhancing the Minecraft experience by combining functionality and ease of use.`,
+    tools: ["Java", "Spigot API", "Maven"],
+    code: "https://www.spigotmc.org/threads/homy-gui-home-system.490867/",
+    role: "Backend Developer",
+    demo: "https://www.spigotmc.org/resources/homy-gui-home-system.89259/",
+  },
+  {
+    id: 4,
+    name: "Blocklist - Spigot Plugin",
+    description:
+      "Blocklist [EZ] is a Spigot Minecraft plugin designed to give server administrators precise control over which blocks and items players can interact with. Created by request and enhanced with additional features, this plugin allows admins to easily blacklist blocks or items with simple commands. With over 1,900 downloads, Blocklist [EZ] has proven to be a reliable and trusted tool for maintaining control and balance in Minecraft servers.",
+    tools: ["Java", "Spigot API", "Maven"],
+    code: "https://www.spigotmc.org/resources/blocklist-ez-blacklist-blocks-and-items-from-your-server.36132/",
+    demo: "https://www.spigotmc.org/resources/blocklist-ez-blacklist-blocks-and-items-from-your-server.36132/",
+    role: "Backend Developer",
+  },
+];
 
 // Do not remove any property.
 // Leave it blank instead as shown below
