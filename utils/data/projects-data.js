@@ -1,5 +1,24 @@
 export const projectsData = [
   {
+    id: 0,
+    name: "Sveriges Geologiska Undersökning (SGU)",
+    description:
+      "As a part of the team at SGU i work on multiple projects that is both offical and internal. Our goal is to develop a platform that can help the geologists at SGU to manage their data and to help them with the analysis of the data.",
+    tools: [
+      "Opensearch (Elasticsearch)",
+      "ViteJs",
+      "SpringBoot",
+      "Java",
+      "Internal ArcGis API",
+      "MySQL",
+      "PostgreSQL",
+      "PostGIS",
+    ],
+    role: "Software Engineer",
+    code: "https://www.sgu.se/",
+    demo: "https://www.sgu.se/",
+  },
+  {
     id: 1,
     name: "Assistena AI",
     description:
@@ -22,7 +41,7 @@ export const projectsData = [
     id: 2,
     name: "Halkan SE",
     description:
-      "Utilizing the development of web development i developed a website for Halkan SE, a startup company in Sweden that focuses on drivers license courses. I was the sole develoer of Halkan SE and i developed a booking system with a paymentgateway, a course management system and a CMS for the website. The payment gateway was developed with direct communication to Swish, Stripe and Klarna to implement the most cusotmizuable payment wall possible. I developed a automatic email system that sends out emails to the students with the course material and the booking information.",
+      "I developed a website for Halkan SE, a Swedish startup offering driver’s license courses. As the sole developer, I created a booking system integrated with payment gateways (Swish, Stripe, and Klarna) to offer a customizable payment experience. Additionally, I built a course management system and a CMS for the website. To enhance user engagement, I implemented an automated email system that sends students course materials and booking information.",
     tools: [
       "ViteJs",
       "Tailwind CSS",
@@ -40,24 +59,12 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Homy+ - Spigot Plugin",
-    description: `Homy+ is an innovative Spigot Minecraft plugin that introduces a user-friendly GUI-based home system. Players can place homes across their Minecraft worlds and teleport to them effortlessly using the GUI. Designed with flexibility in mind, Homy+ is fully customizable, allowing users to define their own language settings, cooldown periods, and more.
-
-With over 500 servers actively using it and a perfect 5/5 star rating, Homy+ stands as a trusted choice for enhancing the Minecraft experience by combining functionality and ease of use.`,
+    name: "SpigotMC",
+    description: `My first developing experience was when i was 14 years old, i developed a Minecraft plugin for the SpigotMC platform. I developed around 20 plugins during my time at SpigotMC. Where as 5 of those was for my own server that i owned for 5 years and the rest are freelancing jobs i did during my time at spigot. My plugins were used by over 1000 servers and 10.000 players. I had also a great imact on the community by helping other developers with their plugins and by creating tutorials for new developers.`,
     tools: ["Java", "Spigot API", "Maven"],
     code: "https://www.spigotmc.org/threads/homy-gui-home-system.490867/",
     role: "Backend Developer",
     demo: "https://www.spigotmc.org/resources/homy-gui-home-system.89259/",
-  },
-  {
-    id: 4,
-    name: "Blocklist - Spigot Plugin",
-    description:
-      "Blocklist [EZ] is a Spigot Minecraft plugin designed to give server administrators precise control over which blocks and items players can interact with. Created by request and enhanced with additional features, this plugin allows admins to easily blacklist blocks or items with simple commands. With over 1,900 downloads, Blocklist [EZ] has proven to be a reliable and trusted tool for maintaining control and balance in Minecraft servers.",
-    tools: ["Java", "Spigot API", "Maven"],
-    code: "https://www.spigotmc.org/resources/blocklist-ez-blacklist-blocks-and-items-from-your-server.36132/",
-    demo: "https://www.spigotmc.org/resources/blocklist-ez-blacklist-blocks-and-items-from-your-server.36132/",
-    role: "Backend Developer",
   },
 ];
 

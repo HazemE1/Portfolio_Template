@@ -3,7 +3,7 @@ export const personalData = {
   profile: "/1735334306797.jpg",
   designation: "Software Engineer",
   description:
-    "My name is Hazem El-Khalil. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+    "I am a passionate and results-driven software engineer with a strong focus on web application development. With a quick learning mindset and a self-driven approach, I thrive in dynamic environments where I can explore emerging technologies and solve complex problems. My expertise is rooted in JavaScript and its ecosystem, and I enjoy leveraging it to build innovative and scalable solutions. ",
   email: "Contact@HazemElkhalil.com",
   phone: "+46733239684",
   address: "Per Albin Hansonsväg 2E, Malmö, Sweden",
