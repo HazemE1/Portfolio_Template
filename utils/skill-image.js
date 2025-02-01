@@ -230,6 +230,22 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case "canva":
       return canva;
+    case "pandas":
+      return pandas;
+    case "sklearn":
+      return scikitlearn;
+    case ".net":
+      return dotnet;
+    case ".net core":
+      return dotnetcore;
+    case "kubernetes":
+      return kubernetes;
+    case "linux":
+      return linux;
+    case "sqlalchemy":
+      return sqlalchemy;
+    case "fastapi":
+      return fastapi;
     default:
       break;
   }
